@@ -172,7 +172,7 @@
     height: 50px;
     border-radius: 50%;
     background-color: var(--theme-color);
-    opacity: 0.6;
+    opacity: 0;
     transition: .3s;
     z-index: 99999;
     i {
@@ -182,8 +182,12 @@
         transform: translate(-50%, -50%);
         color: white;
     }
+}
+
+#backtotop.show {
+    opacity: 0.6;
+    transition: .3s;
     &:hover {
         opacity: 1;
-        transition: .3s;
     }
 }

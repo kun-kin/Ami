@@ -120,6 +120,7 @@ section.enjoy {
 }
 
 section.activity {
+    overflow: hidden;
     .activity-main {
         .thumd {
             .image {
@@ -273,10 +274,18 @@ section.testimonial {
                 .owl-prev {
                     position: relative;
                     right: 45%;
+                    @media(max-width: 768px) {
+                        right: 40%;
+                        top: 50px;
+                    }
                 }
                 .owl-next {
                     position: relative;
                     left: 45%;
+                    @media(max-width: 768px) {
+                        left: 40%;
+                        top: 50px;
+                    }
                 }
             }
         }
