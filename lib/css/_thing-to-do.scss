@@ -1,0 +1,79 @@
+section.thing-content {
+    .thing-content__main {
+        padding: 100px 0 0;
+        .title-text {
+            padding: 0 20%;
+            @media(max-width: 768px) {
+                padding: 0;
+            }
+        }
+        .list-thing {
+            box-shadow: 2px 0px 20px 0px rgb(0 0 0 / 10%);
+            transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+            background-color: white;
+            .list-item {
+                .desc {
+                    padding: 0;
+                    .inner {
+                        padding: 60px 80px;
+                        .title-box {
+                            .title {
+                                align-items: center;
+                                display: flex;
+                                font-family: Cinzel;
+                                font-size: 30px;
+                                justify-content: flex-start;
+                                line-height: 30px;
+                                text-align: left;
+                            }
+                        }
+                        .title {
+                            align-items: center;
+                            display: flex;
+                            font-family: Cinzel;
+                            font-size: 18px;
+                            justify-content: flex-start;
+                            line-height: 18px;
+                            text-align: left;
+                        }
+                        ul {
+                            margin-top: 30px;
+                            li {
+                                color: #6b6460;
+                                line-height: 30px;
+                                text-align: left;
+                                list-style: square;
+                                margin-left: 20px;
+                                &::marker {
+                                    color: #cf9d6c;
+                                }
+                                &:hover {
+                                    color: #cf9d6c;
+                                }
+                            }
+                        }
+                        @media(max-width:991px) {
+                            padding: 30px;
+                        }
+                    }
+                }
+                .thumd {
+                    padding: 0;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                &:nth-child(even) {
+                    .desc {
+                        order: 2;
+                        @media(max-width: 768px) {
+                            order: inherit;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,152 @@
+section.our-team {
+    .our-team__main {
+        section.owlner {
+            padding: 100px 0;
+            border-bottom: 1px solid #ededed;
+            .thumd {
+                width: 100%;
+                height: 100%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .desc {
+                padding-left: 95px;
+                .heading-title {
+                    align-items: center;
+                    display: flex;
+                    font-family: Cinzel;
+                    font-size: 50px;
+                    justify-content: flex-start;
+                    line-height: 50px;
+                    text-align: left;
+                    margin-bottom: 60px;
+                }
+                .text2 {
+                    margin-bottom: 20px;
+                }
+                .signature {
+                    margin-bottom: 30px;
+                    padding: 20px 0;
+                }
+                .infor-owlner {
+                    .title {
+                        font-family: cinzel;
+                        font-weight: 400;
+                        font-size: 1.125rem;
+                    }
+                    .sub-title {
+                        color: #6b6460;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                }
+                @media(max-width:991px) {
+                    padding: 20px;
+                }
+            }
+        }
+        section.people {
+            padding: 100px 0;
+            .people-item {
+                .inner {
+                    .image {
+                        img {
+                            max-height: 300px;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    .content {
+                        text-align: center;
+                        padding: 30px 0;
+                        .details {
+                            .name {
+                                font-size: 20px;
+                                font-weight: 600;
+                                line-height: 28px;
+                                font-family: cinzel;
+                                font-weight: 600;
+                                color: #2a2b2b;
+                            }
+                            .job {
+                                color: #6b6460;
+                                font-size: 14px;
+                                line-height: 26.25px;
+                                font-family: cinzel;
+                                margin-bottom: 30px;
+                            }
+                        }
+                        .description {
+                            color: #6b6460;
+                            font-size: 14px;
+                            line-height: 26.25px;
+                            font-family: ubuntu;
+                            margin-bottom: 35px;
+                        }
+                        .social {
+                            .icons-list {
+                                background: white;
+                                border-radius: 5px;
+                                margin: 0;
+                                padding: 0;
+                                list-style: none;
+                                font-size: 0.875rem;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                li {
+                                    margin: 5px;
+                                    a {
+                                        background-color: #423a36;
+                                        color: #fff;
+                                        padding: 10px;
+                                        width: 40px;
+                                        height: 40px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        transition: all 0.3s linear;
+                                        &:hover {
+                                            background-color: #CF9D6C;
+                                            transition: all 0.3s linear;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        section.best-price {
+            .best-price__main {
+                .thumd {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .desc {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                    .inner {
+                        padding: 0 100px;
+                        .text2 {
+                            margin-bottom: 20px;
+                        }
+                        @media(max-width:991px) {
+                            padding: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
